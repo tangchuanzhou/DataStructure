@@ -1,5 +1,7 @@
 package com.algorithms.sort.util;
 
+import com.algorithms.sort.ShellSort;
+
 import com.algorithms.sort.InsertionSort;
 import com.algorithms.sort.SelectionSort;
 import com.algorithms.util.StdOut;
@@ -15,6 +17,7 @@ public class SortCompare {
 		Stopwatch timer = new Stopwatch();
 		if(alg.equals("Insertion")) InsertionSort.sort(a);
 		if(alg.equals("Selection")) SelectionSort.sort(a);
+		if(alg.equals("Shell")) ShellSort.sort(a);
 		return timer.elapsedTime();
 	}
 	
